@@ -134,12 +134,12 @@ class SearchPage extends GetView<HomeController> {
                         children: [
                           Text(
                             "Mar 22 - Mar 23",
-                            style: AppTextStyle.sfSemiBold.copyWith(fontSize: 12.sp,
+                            style: AppTextStyle.sfSemiBold.copyWith(fontSize: 11.sp,
                                 color: ThemeColors.blackColor,fontWeight: FontWeight.w600),
                           ),
                           Text(
                             "From AED 741",
-                            style: AppTextStyle.sfRegular.copyWith(fontSize: 12.sp,
+                            style: AppTextStyle.sfRegular.copyWith(fontSize: 11.sp,
                                 color: ThemeColors.blackColor,fontWeight: FontWeight.w500),
                           ),
                         ],
@@ -155,12 +155,12 @@ class SearchPage extends GetView<HomeController> {
                         children: [
                           Text(
                             "Mar 22 - Mar 23",
-                            style: AppTextStyle.sfSemiBold.copyWith(fontSize: 12.sp,
+                            style: AppTextStyle.sfSemiBold.copyWith(fontSize: 11.sp,
                                 color: ThemeColors.blackColor,fontWeight: FontWeight.w600),
                           ),
                           Text(
                             "From AED 741",
-                            style: AppTextStyle.sfRegular.copyWith(fontSize: 12.sp,
+                            style: AppTextStyle.sfRegular.copyWith(fontSize: 11.sp,
                                 color: ThemeColors.blackColor,fontWeight: FontWeight.w500),
                           ),
                         ],
@@ -176,12 +176,12 @@ class SearchPage extends GetView<HomeController> {
                         children: [
                           Text(
                             "Mar 22 - Mar 23",
-                            style: AppTextStyle.sfSemiBold.copyWith(fontSize: 12.sp,
+                            style: AppTextStyle.sfSemiBold.copyWith(fontSize: 11.sp,
                                 color: ThemeColors.blackColor,fontWeight: FontWeight.w600),
                           ),
                           Text(
                             "From AED 741",
-                            style: AppTextStyle.sfRegular.copyWith(fontSize: 12.sp,
+                            style: AppTextStyle.sfRegular.copyWith(fontSize: 11.sp,
                                 color: ThemeColors.blackColor,fontWeight: FontWeight.w500),
                           ),
                         ],

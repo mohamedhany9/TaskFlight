@@ -167,7 +167,7 @@ class HomeScreen extends GetView<HomeController> {
                                 SizedBox(height: 10.h,),
                                 Row(
                                   children: [
-                                    SizedBox(width: 50.w,),
+                                    SizedBox(width: 20.w,),
                                     Image.asset('assets/images/line.png'),
                                   ],
                                 ),
@@ -319,37 +319,43 @@ class HomeScreen extends GetView<HomeController> {
                             scrollDirection: Axis.horizontal,
                             itemCount: 5,
                             itemBuilder: (context,index){
-                          return Container(
-                            height: 313.h,
-                            width: 200.w,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage("assets/images/image1.png"),
-                                fit: BoxFit.contain,
+                          return GestureDetector(
+                            onTap: (){
+                              Get.to(SearchPage());
+                            },
+                            child: Container(
+                              height: 313.h,
+                              width: 180.w,
+                              margin: EdgeInsets.only(right: 10),
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage("assets/images/image1.png"),
+                                  fit: BoxFit.fitHeight,
+                                ),
                               ),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "From AED867",
-                                    style: AppTextStyle.sfLight.copyWith(fontSize: 12.sp,
-                                        color: ThemeColors.whiteColor,fontWeight: FontWeight.w500),
-                                  ),
-                                  Text(
-                                    "Economy round trip",
-                                    style: AppTextStyle.sfLight.copyWith(fontSize: 12.sp,
-                                        color: ThemeColors.whiteColor,fontWeight: FontWeight.w500),
-                                  ),
-                                  Text(
-                                    "Saudi Arabia",
-                                    style: AppTextStyle.sfSemiBold.copyWith(fontSize: 20.sp,
-                                        color: ThemeColors.whiteColor,fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "From AED867",
+                                      style: AppTextStyle.sfLight.copyWith(fontSize: 12.sp,
+                                          color: ThemeColors.whiteColor,fontWeight: FontWeight.w500),
+                                    ),
+                                    Text(
+                                      "Economy round trip",
+                                      style: AppTextStyle.sfLight.copyWith(fontSize: 12.sp,
+                                          color: ThemeColors.whiteColor,fontWeight: FontWeight.w500),
+                                    ),
+                                    Text(
+                                      "Saudi Arabia",
+                                      style: AppTextStyle.sfSemiBold.copyWith(fontSize: 20.sp,
+                                          color: ThemeColors.whiteColor,fontWeight: FontWeight.w600),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           );
@@ -366,6 +372,7 @@ class HomeScreen extends GetView<HomeController> {
                           ),
                         ],
                       ),
+                      SizedBox(height: 10.h,),
                       Image.asset('assets/images/image2.png'),
                       SizedBox(height: 20.h,),
                     ],
